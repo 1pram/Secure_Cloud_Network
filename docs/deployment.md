@@ -16,7 +16,7 @@
   terraform plan
   terraform apply
 
-***Terraform prompts for required variables such as region, key paiar name, and admin IP.***
+***Terraform prompts for required variables such as region, key pair name, and admin IP.***
 
 **Access Workflow**
 1. SSH into the bastion host using your key pair
