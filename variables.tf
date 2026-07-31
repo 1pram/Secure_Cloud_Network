@@ -9,9 +9,22 @@ variable "admin_ip" {
   type        = string
 }
 
-variable "key_pair_name" {
-  description = "Existing EC2 key pair name to use for SSH"
+variable "noc_public_key_path" {
+  description = "Path to the NOC department SSH public key (.pub)"
   type        = string
+  default     = "keys/noc-key.pub"
+}
+
+variable "hr_public_key_path" {
+  description = "Path to the HR department SSH public key (.pub)"
+  type        = string
+  default     = "keys/hr-key.pub"
+}
+
+variable "acct_public_key_path" {
+  description = "Path to the Accounting department SSH public key (.pub)"
+  type        = string
+  default     = "keys/acct-key.pub"
 }
 
 variable "hr_bucket_name" {
@@ -28,4 +41,10 @@ variable "NOC_log_group_prefix" {
   description = "Prefix for NOC CloudWatch log groups"
   type        = string
   default     = "/dept/NOC/"
+}
+
+variable "operator_principal_arn" {
+  description = "IAM principal ARN allowed to assume the operator roles. Defaults to the calling identity."
+  type        = string
+  default     = null
 }

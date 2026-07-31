@@ -1,4 +1,5 @@
 # One private workstation per department, SSH via bastion only
+# Each instance uses its own key pair and its own department security group
 
 # IT workstation
 resource "aws_instance" "NOC_ws" {
@@ -6,8 +7,8 @@ resource "aws_instance" "NOC_ws" {
   instance_type               = "t2.micro"
   subnet_id                   = aws_subnet.NOC_private.id
   associate_public_ip_address = false
-  key_name                    = var.key_pair_name
-  vpc_security_group_ids      = [aws_security_group.private_ssh_sg.id]
+  key_name                    = aws_key_pair.noc_key.key_name
+  vpc_security_group_ids      = [aws_security_group.noc_private_sg.id]
   iam_instance_profile        = aws_iam_instance_profile.NOC_ws_profile.name
 
   tags = {
@@ -22,8 +23,8 @@ resource "aws_instance" "hr_ws" {
   instance_type               = "t2.micro"
   subnet_id                   = aws_subnet.hr_private.id
   associate_public_ip_address = false
-  key_name                    = var.key_pair_name
-  vpc_security_group_ids      = [aws_security_group.private_ssh_sg.id]
+  key_name                    = aws_key_pair.hr_key.key_name
+  vpc_security_group_ids      = [aws_security_group.hr_private_sg.id]
   iam_instance_profile        = aws_iam_instance_profile.hr_ws_profile.name
 
   tags = {
@@ -38,8 +39,8 @@ resource "aws_instance" "acct_ws" {
   instance_type               = "t2.micro"
   subnet_id                   = aws_subnet.acct_private.id
   associate_public_ip_address = false
-  key_name                    = var.key_pair_name
-  vpc_security_group_ids      = [aws_security_group.private_ssh_sg.id]
+  key_name                    = aws_key_pair.acct_key.key_name
+  vpc_security_group_ids      = [aws_security_group.acct_private_sg.id]
   iam_instance_profile        = aws_iam_instance_profile.acct_ws_profile.name
 
   tags = {
