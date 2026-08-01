@@ -6,5 +6,5 @@
 *.key
 .terraform.lock.hcl.backup
 crash.log
-terrafom.tfvars
+terraform.tfvars
 *.auto.tfvars*
