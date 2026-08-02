@@ -1,0 +1,18 @@
+{
+  "version": "2.6.2",
+  "release_version": "",
+  "released_at": "2026-08-01",
+  "summary": {
+    "title": "New Threat Model",
+    "owner": "Isaac Pyram",
+    "description": "This model represents the project's original AWS network before the security review. It consists of a segmented VPC with a public bastion host, three private departmental workstations (NOC, HR, and Accounting), IAM roles, and department-specific S3 buckets. Administrative access is centralized through the bastion host, and private instances are not directly exposed to the Internet. While the architecture established network segmentation and controlled entry into the environment, the review identified opportunities to strengthen identity boundaries, reduce implicit trust between resources, and better align access controls with the principle of least privilege.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [],
+    "diagramTop": 0,
+    "reviewer": "",
+    "threatTop": 0
+  }
+}
