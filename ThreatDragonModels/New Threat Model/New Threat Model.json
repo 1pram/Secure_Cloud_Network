@@ -21,6 +21,98 @@
         "cells": [
           {
             "position": {
+              "x": 314.9999999999997,
+              "y": 550
+            },
+            "size": {
+              "width": 150,
+              "height": 230
+            },
+            "attrs": {
+              "label": {
+                "text": "\n\n\n\n\n\n\n\n\n\n\n\n\nNOC Departmental \nBoundary"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "89bbf64c-32d3-4607-98f2-dbf0169e5596",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "\n\n\n\n\n\n\n\n\n\n\n\n\nNOC Departmental \nBoundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "d396648c-5624-4c78-aaf1-040ed53054a1"
+              ],
+              "containedElements": [
+                "13be436c-099e-46f5-809a-c56816f698fd"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 491.25,
+              "y": 550
+            },
+            "size": {
+              "width": 150,
+              "height": 230
+            },
+            "attrs": {
+              "label": {
+                "text": "\n\n\n\n\n\n\n\n\n\n\n\n\nHR Departmental \nBoundary"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "cb08c15e-69bf-4368-a519-43456acc9194",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "\n\n\n\n\n\n\n\n\n\n\n\n\nHR Departmental \nBoundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": [
+                "cf1575c5-4c4a-4d32-97e8-2ce10245f38e"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 663.9999999999999,
+              "y": 550
+            },
+            "size": {
+              "width": 150,
+              "height": 230
+            },
+            "attrs": {
+              "label": {
+                "text": "\n\n\n\n\n\n\n\n\n\n\n\n\nAcct. Departmental  \nBoundary"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "695ada21-ae60-4bc6-9633-b2fd23b5112a",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "\n\n\n\n\n\n\n\n\n\n\n\n\nAcct. Departmental  \nBoundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": [
+                "65812386-fb25-496c-bffc-cc8895cb07f2"
+              ]
+            }
+          },
+          {
+            "position": {
               "x": 510,
               "y": 0
             },
@@ -259,7 +351,7 @@
           {
             "position": {
               "x": 320,
-              "y": 560
+              "y": 570
             },
             "size": {
               "width": 140,
@@ -379,7 +471,7 @@
           {
             "position": {
               "x": 668.9999999999999,
-              "y": 555
+              "y": 565
             },
             "size": {
               "width": 140,
@@ -499,7 +591,7 @@
           {
             "position": {
               "x": 496.25,
-              "y": 540
+              "y": 550
             },
             "size": {
               "width": 140,
@@ -693,7 +785,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "89bbf64c-32d3-4607-98f2-dbf0169e5596"
+              ]
             },
             "labels": [
               ""
@@ -701,7 +795,7 @@
             "id": "d396648c-5624-4c78-aaf1-040ed53054a1",
             "source": {
               "x": 549,
-              "y": 330
+              "y": 340
             },
             "target": {
               "cell": "13be436c-099e-46f5-809a-c56816f698fd",
@@ -753,206 +847,7 @@
               "x": 560,
               "y": 590
             },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            "vertices": []
           }
         ],
         "description": "Before the re-design"
