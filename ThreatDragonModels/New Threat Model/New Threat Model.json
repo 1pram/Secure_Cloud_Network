@@ -40,6 +40,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -123,7 +124,6 @@
               ]
             },
             "id": "3e62877e-cbb2-4777-bfb7-84e1aeca1b6c",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "User/Operator",
@@ -157,6 +157,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -240,7 +241,6 @@
               ]
             },
             "id": "e036bcc9-80d1-4de2-bfef-ed6d46b0f79c",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Bastion Host",
@@ -258,8 +258,8 @@
           },
           {
             "position": {
-              "x": 270,
-              "y": 390
+              "x": 320,
+              "y": 560
             },
             "size": {
               "width": 140,
@@ -277,6 +277,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -360,7 +361,6 @@
               ]
             },
             "id": "13be436c-099e-46f5-809a-c56816f698fd",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "NOC Workstation",
@@ -378,8 +378,8 @@
           },
           {
             "position": {
-              "x": 708.9999999999999,
-              "y": 385
+              "x": 668.9999999999999,
+              "y": 555
             },
             "size": {
               "width": 140,
@@ -397,6 +397,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -480,7 +481,6 @@
               ]
             },
             "id": "65812386-fb25-496c-bffc-cc8895cb07f2",
-            "zIndex": 4,
             "data": {
               "type": "tm.Process",
               "name": "Acct. Workstation",
@@ -499,7 +499,7 @@
           {
             "position": {
               "x": 496.25,
-              "y": 370
+              "y": 540
             },
             "size": {
               "width": 140,
@@ -517,6 +517,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -600,7 +601,6 @@
               ]
             },
             "id": "cf1575c5-4c4a-4d32-97e8-2ce10245f38e",
-            "zIndex": 5,
             "data": {
               "type": "tm.Process",
               "name": "HR Workstation",
@@ -614,6 +614,98 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              ""
+            ],
+            "id": "35f1e198-0b81-469e-b1dc-79be940d8f12",
+            "source": {
+              "x": 578,
+              "y": 330
+            },
+            "target": {
+              "x": 730,
+              "y": 560
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              ""
+            ],
+            "id": "d396648c-5624-4c78-aaf1-040ed53054a1",
+            "source": {
+              "x": 549,
+              "y": 330
+            },
+            "target": {
+              "cell": "13be436c-099e-46f5-809a-c56816f698fd",
+              "port": "7c37a249-fcc6-4e70-972e-45f5339859cc"
             }
           }
         ],
