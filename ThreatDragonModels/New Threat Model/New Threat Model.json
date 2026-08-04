@@ -35,8 +35,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "89bbf64c-32d3-4607-98f2-dbf0169e5596",
             "zIndex": -1,
+            "id": "89bbf64c-32d3-4607-98f2-dbf0169e5596",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "\n\n\n\n\n\n\n\n\n\n\n\n\nNOC Departmental \nBoundary",
@@ -67,8 +67,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "cb08c15e-69bf-4368-a519-43456acc9194",
             "zIndex": -1,
+            "id": "cb08c15e-69bf-4368-a519-43456acc9194",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "\n\n\n\n\n\n\n\n\n\n\n\n\nHR Departmental \nBoundary",
@@ -97,8 +97,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "695ada21-ae60-4bc6-9633-b2fd23b5112a",
             "zIndex": -1,
+            "id": "695ada21-ae60-4bc6-9633-b2fd23b5112a",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "\n\n\n\n\n\n\n\n\n\n\n\n\nAcct. Departmental  \nBoundary",
@@ -127,8 +127,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "826bc05e-5c2c-4c48-9809-d595c53e6438",
             "zIndex": -1,
+            "id": "826bc05e-5c2c-4c48-9809-d595c53e6438",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n                               Administrative Boundary",
@@ -147,6 +147,40 @@
                 "cf1575c5-4c4a-4d32-97e8-2ce10245f38e"
               ]
             }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": -1,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Authentication & Authorization Bound",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Authentication & Authorization Bound"
+            ],
+            "id": "4cf969ca-e172-44b6-8ea5-bf9b0a839199",
+            "source": {
+              "x": 195,
+              "y": 190
+            },
+            "target": {
+              "x": 470,
+              "y": 190
+            },
+            "vertices": [
+              {
+                "x": 320,
+                "y": 170
+              }
+            ]
           },
           {
             "position": {
