@@ -204,8 +204,8 @@
                 "text": "User/Operator"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -298,13 +298,40 @@
             "data": {
               "type": "tm.Actor",
               "name": "User/Operator",
-              "description": "",
+              "description": "User/operator from from any of the following departments: NOC, HR, Acct. (accounting). It can also be a bad actor.",
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "53ac01a3-cc44-4a38-9ef0-4404cffc7e62",
+                  "title": "Impersonation",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Spoofing may occur when a user from one department holding the existing (shared) key pair has come in possession of the IP address of a workstation belonging in another department. Having the IP address of a workstation from the HR department effectively would allow an operator in Accounting to log-in to that workstation when they use the shared key. This is only possible after exiting their respective session or right after they've successfully reached the bastion host.",
+                  "mitigation": "Eliminate shared keys in favor of department specific key pairs.\nEliminate long-lived key pairs.\nImplement IAM controls that provide attribution.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 2,
+                "repudiation": 0
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -415,7 +442,7 @@
             "data": {
               "type": "tm.Process",
               "name": "Bastion Host",
-              "description": "",
+              "description": "Central and common access path.\nShares the same key pair as workstations within private subnets.\nHolds centralized administrative trust.",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -981,6 +1008,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 2
   }
 }
