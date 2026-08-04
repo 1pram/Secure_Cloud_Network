@@ -156,7 +156,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "Authentication & Authorization Bound",
+              "name": "Authentication & Authorization Boundary",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
@@ -164,21 +164,29 @@
               "containedElements": []
             },
             "labels": [
-              "Authentication & Authorization Bound"
+              "Authentication & Authorization Boundary"
             ],
-            "id": "4cf969ca-e172-44b6-8ea5-bf9b0a839199",
+            "id": "f5f94ec6-fa0b-4fe7-8ca2-50c337d3fe50",
             "source": {
-              "x": 195,
-              "y": 190
+              "x": 390,
+              "y": 180
             },
             "target": {
-              "x": 470,
-              "y": 190
+              "x": 700,
+              "y": 180
             },
             "vertices": [
               {
-                "x": 320,
-                "y": 170
+                "x": 500,
+                "y": 160
+              },
+              {
+                "x": 600,
+                "y": 160
+              },
+              {
+                "x": 720,
+                "y": 180
               }
             ]
           },
