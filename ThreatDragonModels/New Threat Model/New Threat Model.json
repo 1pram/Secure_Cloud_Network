@@ -113,6 +113,43 @@
           },
           {
             "position": {
+              "x": 290,
+              "y": 540.0000000000009
+            },
+            "size": {
+              "width": 550,
+              "height": 290
+            },
+            "attrs": {
+              "label": {
+                "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n                               Administrative Boundary"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "826bc05e-5c2c-4c48-9809-d595c53e6438",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n                               Administrative Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "d396648c-5624-4c78-aaf1-040ed53054a1"
+              ],
+              "containedElements": [
+                "89bbf64c-32d3-4607-98f2-dbf0169e5596",
+                "cb08c15e-69bf-4368-a519-43456acc9194",
+                "695ada21-ae60-4bc6-9633-b2fd23b5112a",
+                "13be436c-099e-46f5-809a-c56816f698fd",
+                "65812386-fb25-496c-bffc-cc8895cb07f2",
+                "cf1575c5-4c4a-4d32-97e8-2ce10245f38e"
+              ]
+            }
+          },
+          {
+            "position": {
               "x": 510,
               "y": 0
             },
@@ -785,22 +822,21 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": [
-                "89bbf64c-32d3-4607-98f2-dbf0169e5596"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
               ""
             ],
-            "id": "d396648c-5624-4c78-aaf1-040ed53054a1",
+            "id": "0ed8167d-80bb-4c37-ad39-d68c18ace615",
             "source": {
-              "x": 549,
-              "y": 340
+              "x": 560,
+              "y": 330
             },
             "target": {
-              "cell": "13be436c-099e-46f5-809a-c56816f698fd",
-              "port": "7c37a249-fcc6-4e70-972e-45f5339859cc"
-            }
+              "x": 560,
+              "y": 590
+            },
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -833,21 +869,23 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "89bbf64c-32d3-4607-98f2-dbf0169e5596",
+                "826bc05e-5c2c-4c48-9809-d595c53e6438"
+              ]
             },
             "labels": [
               ""
             ],
-            "id": "0ed8167d-80bb-4c37-ad39-d68c18ace615",
+            "id": "d396648c-5624-4c78-aaf1-040ed53054a1",
             "source": {
-              "x": 560,
-              "y": 330
+              "x": 549,
+              "y": 340
             },
             "target": {
-              "x": 560,
-              "y": 590
-            },
-            "vertices": []
+              "cell": "13be436c-099e-46f5-809a-c56816f698fd",
+              "port": "7c37a249-fcc6-4e70-972e-45f5339859cc"
+            }
           }
         ],
         "description": "Before the re-design"
