@@ -886,6 +886,52 @@
               "cell": "13be436c-099e-46f5-809a-c56816f698fd",
               "port": "7c37a249-fcc6-4e70-972e-45f5339859cc"
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              ""
+            ],
+            "id": "d86510b8-b3dd-4e09-b20b-ab8a93e3a9f3",
+            "source": {
+              "x": 560,
+              "y": 60
+            },
+            "target": {
+              "x": 560,
+              "y": 140
+            }
           }
         ],
         "description": "Before the re-design"
